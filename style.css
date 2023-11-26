@@ -37,6 +37,27 @@ nav{
     margin-right: 10%;
     font-size: 20px;
     text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    
+    
+}
+
+.menu::before{
+    content: " ";
+    height: 3px;
+    width: 0;
+    background-color: red;
+    bottom: -10px;
+    left: 0;
+    position: absolute;
+    transition: 0.5s;   
+}
+
+.menu:hover::before{
+    width: 100%;
 }
 
 .heading{
@@ -55,7 +76,9 @@ nav{
     font-size: 62px;
     margin:  0 0 30px;
     text-transform: uppercase;
+    line-height: 1.25;
 }
 .heading p{
     font-size: 25px;
+    line-height: 1.5;
 }
