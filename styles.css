@@ -5,6 +5,10 @@
     font-family: 'Oxygen', sans-serif;
 }
 
+body {
+    background-color: rgba(236, 234, 234, 0.571);
+}
+
 /* ==============================
         NAVIGATION BAR
    ==============================
@@ -20,15 +24,28 @@ nav {
 .nav img {
     width: 90px;
     margin-left: 15px;
+    margin-top: 20px;
+    
+    animation: rotateInfinite 2s ease infinite;
+}
+
+.nav img:hover {
+    transform: rotateY(360deg);
+    transition: 1s ease;
 }
 
 .nav a {
     font-family: 'Oxygen', sans-serif;
     font-weight: 800;
     font-size: 24px;
-    color: white;
+    color: rgba(255, 255, 255, 0.903);
     text-decoration: none;
     margin-right: 30px;
+}
+
+.nav a:hover {
+    transform: translateY(-5px);
+    transition: 0.4s ease;
 }
 
 /* ==============================
@@ -38,9 +55,9 @@ nav {
 .hero {
     height: 100vh;
     background-image: url(images/hero-bg.jpg);
-    background-position: top;
-    background-size: 100%;
-    background-attachment:local;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .hero-section{
@@ -55,18 +72,95 @@ nav {
 .hero-section h1 {
     font-size: 89px;
     text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.529);
-    color: white;
+    color: rgba(255, 255, 255, 0.903);
     /* position: relative; */
     margin-left: 5%;
     top: 1.5em;
+
+    animation: slideInEasy 0.7s ease-out;
 }
 
 .hero-section h3 {
-    color: white;
+    color:rgba(255, 255, 255, 0.903);
     text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.529);
     font-size: 2em;
     width: 80%;
     line-height: 1.5;
     margin-top: 30px;
     margin-left: 5%;
+
+    animation: slideInEasy 1.3s ease-out;
+}
+
+
+/*  ==============================
+            ARTICLES
+    ==============================
+ */
+
+ .intro {
+    text-indent: 45px;
+    font-size: 20px;
+    font-weight: 400;
+    width: 80%;
+    margin: 80px auto ;
+ } 
+
+.content {
+    margin-block: 80px;
+} 
+
+.content h2 {
+    font-family:'Montserrat', serif;
+    font-weight: 500px;
+    margin-left: 5%;
+    margin-bottom: 30px;
+}
+
+.content-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.content-flex > * {
+    width: 50%;
+    padding: 30px;
+}
+
+.content-flex p {
+    align-self: start;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+}
+
+.content img {
+    max-width: 600px;
+    flex-grow: 1;
+}
+
+
+/* ============================
+        ANIMATIONS
+   ============================
+*/
+@keyframes slideInEasy {
+    from {
+        transform: translateX(-50px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes rotateInfinite {
+    from {
+        transform: rotateY(0);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
 }
