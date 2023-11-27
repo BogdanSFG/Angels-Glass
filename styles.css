@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: rgba(236, 234, 234, 0.571);
+    background-color: rgba(236, 234, 234, 0.456);
 }
 
 /* ==============================
@@ -77,19 +77,20 @@ nav {
     margin-left: 5%;
     top: 1.5em;
 
-    animation: slideInEasy 0.7s ease-out;
+    animation: slideIn 0.7s ease-out;
 }
 
 .hero-section h3 {
     color:rgba(255, 255, 255, 0.903);
-    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.529);
+    text-shadow: 2px 2px 10px rgb(0, 0, 0);
+    text-shadow: -2px -2px 10px rgb(0, 0, 0);
     font-size: 2em;
     width: 80%;
     line-height: 1.5;
     margin-top: 30px;
     margin-left: 5%;
 
-    animation: slideInEasy 1.3s ease-out;
+    animation: slideIn 1.3s ease-out;
 }
 
 
@@ -134,22 +135,23 @@ nav {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 20px;
+    text-indent: 40px;
     color: black;
 }
 
 .content img {
     max-width: 600px;
-    flex-grow: 1;
+    /* flex-grow: 1; */
 }
 
 
 /* ============================
-        ANIMATIONS
+       ANIMATIONS / UTILITY
    ============================
 */
-@keyframes slideInEasy {
+@keyframes slideIn{
     from {
-        transform: translateX(-50px);
+        transform: translateX(-60px);
     }
     to {
         transform: translateX(0px);
