@@ -60,12 +60,10 @@ nav a:hover:nth-child(2) {
 
 .hero-video {
     position: absolute;
-    top: -10%;
-    left: -20%;
     width: auto;
     height: auto;
-    min-width: 100%;
-    min-height: 100%;
+    min-width: 80%;
+    max-height: 120%;
     z-index: -100;
     transform: rotateY(180deg);
     transition: 1s opacity;
@@ -163,6 +161,10 @@ nav a:hover:nth-child(2) {
     .hero-title h3 {
         font-size: 30px;
     }
+}
+
+@media screen and (min-width: 1600px ) {
+
 }
 
 /* =================================
