@@ -4,44 +4,39 @@
     padding: 0;
 }
 
-body{
-    background-image: url(images/background.jpg);
-   
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;    
-    background-position: center;
-    
-    
-}
 
+/* Nav Bar */
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 60px;
     width: 100%;
-    margin: auto;
+    
     color: white;
-    background-color: rgba(0,88,90,0.8);
+    background-color: rgba(0,88,90,1);
     position: fixed;
+    z-index: 1;
+    top: 0;
+    left:0;
+    padding: 0 5%;
+    
 }
 
 .logoImg{
     height: 60px;
-    margin-left: 10%;
+    
     
 }
 
 .menu{
-    margin-right: 10%;
+    
     font-size: 20px;
     text-transform: uppercase;
     text-decoration: none;
     color: white;
     cursor: pointer;
     position: relative;
-    
     
 }
 
@@ -53,32 +48,96 @@ nav{
     bottom: -10px;
     left: 0;
     position: absolute;
-    transition: 0.5s;   
+    transition: 400ms ease 10ms;   
 }
 
 .menu:hover::before{
     width: 100%;
 }
 
+/* Main Content */
+main{
+    padding: 0 5%;
+}
 .heading{
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;    
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    margin: 0 -5.5555%;
+}
+.headingContent{
     color: white;
     position: absolute;
     width: 100%;
     top:50%;
     transform: translateY(-50%);
-    text-align: center;
-    padding: 10%;
-    margin-top: -30px
-   
+    text-align: center; 
 }
 
 .heading h1{
-    font-size: 62px;
-    margin:  0 0 30px;
+    font-size: 96px;
     text-transform: uppercase;
     line-height: 1.25;
+    width: 1024px;
+    margin: 0 auto 20px;
 }
 .heading p{
-    font-size: 25px;
+    font-size: 32px;
     line-height: 1.5;
+    width: 1024px;
+    margin: 0 auto;
+    padding: 0 0;
+}
+.content{
+    width:80%;
+    margin: 0 auto;
+}
+
+.category{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    
+
+}
+.techItem{
+    width: 23.5%;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-top: 2%;
+    
+    
+
+}
+.techItem img{
+    width: 90%;
+    height:auto;
+    display: block;
+    margin: 5% auto;
+    border-radius: 10px;
+}
+
+
+
+.techItem p{
+    margin: 5%;
+}
+
+.techItem img:hover{
+opacity: 0.5;
+}
+
+@media (max-width: 1023px){
+    .techItem{
+        width: 49%;
+        margin-top: 2%;
+    }
+    .category{
+        margin-top: 0;
+    }
 }
