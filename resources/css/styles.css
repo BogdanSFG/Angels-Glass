@@ -114,16 +114,12 @@ nav a:hover:nth-child(2) {
     text-align: center;
     font-size: 30px;
     margin-block: 40px;
-
 }
 
 #intro p {
     font-size: 20px;
     text-indent: 40px;
 }
-
-
-
 
 /* =================================
            MEDIA - UTILITY
@@ -164,8 +160,12 @@ nav a:hover:nth-child(2) {
 }
 
 @media screen and (min-width: 1600px ) {
-
+    .hero-video {
+        height: auto;
+        transform:rotateY(180deg);
+    }
 }
+
 
 /* =================================
            UTILITY
@@ -175,26 +175,9 @@ nav a:hover:nth-child(2) {
 @keyframes slideIn {
     from {
         transform: translateX(-50px);
-
     }
-
     to {
         transform: translateX(0px);
     }
 }
 
-
-/* 
-@media (min-aspect-ratio: 16/9) {
-    #myVide {
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media (max-aspect-ratio: 16/9) {
-    #myVide {
-        width: auto;
-        height: 100%;
-    }
-} */
