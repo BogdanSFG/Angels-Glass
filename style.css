@@ -14,7 +14,7 @@ nav{
     width: 100%;
     
     color: white;
-    background-color: rgba(0,88,90,1);
+    background-color: rgba(6, 13, 13, 1);
     position: fixed;
     z-index: 1;
     top: 0;
@@ -44,11 +44,11 @@ nav{
     content: " ";
     height: 3px;
     width: 0;
-    background-color: red;
+    background-color: white;
     bottom: -10px;
     left: 0;
     position: absolute;
-    transition: 400ms ease 10ms;   
+    transition: 0.5s;   
 }
 
 .menu:hover::before{
@@ -58,12 +58,16 @@ nav{
 /* Main Content */
 main{
     padding: 0 5%;
+    background: rgb(179, 179, 179);
+
+    
 }
 .heading{
     background-image: url(images/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;    
     background-position: center;
+    background-attachment: fixed;;
     height: 100vh;
     position: relative;
     margin: 0 -5.5555%;
@@ -78,22 +82,16 @@ main{
 }
 
 .heading h1{
-    font-size: 96px;
+    font-size: 6em;
     text-transform: uppercase;
     line-height: 1.25;
-    width: 1024px;
-    margin: 0 auto 20px;
+    margin: 0 auto 0;
 }
 .heading p{
-    font-size: 32px;
+    font-size: 2em;
     line-height: 1.5;
-    width: 1024px;
     margin: 0 auto;
     padding: 0 0;
-}
-.content{
-    width:80%;
-    margin: 0 auto;
 }
 
 .category{
@@ -101,25 +99,28 @@ main{
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: space-between;
-    
-
 }
+
+.category:last-of-type{
+    padding-bottom: 2%;
+}
+
 .techItem{
     width: 23.5%;
     text-align: center;
     border: 1px solid black;
     border-radius: 20px;
     margin-top: 2%;
-    
-    
-
+    background-color: rgb(200, 200, 200);
 }
+
 .techItem img{
     width: 90%;
     height:auto;
     display: block;
     margin: 5% auto;
     border-radius: 10px;
+    border: 1px solid black;
 }
 
 
@@ -132,12 +133,15 @@ main{
 opacity: 0.5;
 }
 
-@media (max-width: 1023px){
+@media (max-width: 1024px){
     .techItem{
         width: 49%;
         margin-top: 2%;
     }
-    .category{
-        margin-top: 0;
+    .heading h1{
+        font-size: 4em;
+    }
+    .heading p{
+        font-size: 1.33em;
     }
 }
