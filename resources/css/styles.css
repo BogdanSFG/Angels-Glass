@@ -298,7 +298,6 @@ aside ol li a:hover {
 @keyframes slideIn {
     from {
         transform: translateX(-50px);
-
     }
 
     to {
