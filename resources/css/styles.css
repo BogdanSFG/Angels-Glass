@@ -179,8 +179,11 @@ main {
 }
 
 article {
-    max-width: 75%;
-    padding: 30px;
+    max-width: 80%;
+    padding: 50px;
+    margin-inline: 50px;
+    border-right: 1px solid rgba(0, 0, 0, 0.322);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.322);
 }
 
 article h2 {
@@ -197,20 +200,24 @@ article p {
     text-indent: 40px;
     text-align: justify;
     margin-bottom: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
 }
 
 main img {
     display: flex;
     max-width: 90%;
-    border-radius: 20px;
-    box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.558);
+    /* border-radius: 20px; */
+    /* box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.558); */
     margin-inline: auto;
+    width: 70%;
     margin-block: 30px;
 }
 
 aside {
-    width: 25%;
-    margin: 90px 10px;
+    min-width: 300px;
+    width: 20%;
+    margin: 90px 50px 90px 0;
     padding: 20px;
 }
 
@@ -218,16 +225,16 @@ aside section {
     position: sticky;
     padding-block: 40px;
     border-radius: 15px;
-    border: 2px inset #6b6b6b86;
-    outline: 2px solid #6b6b6b86;
+    border: 2px solid #6b6b6b86;
+    /* outline: 2px solid #6b6b6b86; */
     background-color: #a7a7a71c;
-    box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.492);
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.178);
     top:30px;
 }
 aside h2 {
     text-align: center;
     font-size: 20px;
-    color: rgba(30, 143, 255, 0.734);
+    color: #3F72AF;
 }
 
 aside ol{
@@ -235,9 +242,12 @@ aside ol{
     margin-inline: 15%;
 }
 
+aside ol li {
+    margin-block: 10px;
+}
+
 aside ol li a {
     text-decoration: none;
-    padding-left: 10px;
     color: black;
 }
 
@@ -246,6 +256,20 @@ aside ol li a:hover {
     border-bottom: 2px solid black;
 }
 
+
+.generalC {
+    color: black;
+    background-color: rgba(107, 107, 107, 0.151);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.generalC img {
+    float: right;
+    width: 300px;
+    margin: 0 0 20px 30px;  
+}
 
 /* =================================
            MEDIA - UTILITY
