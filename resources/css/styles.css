@@ -231,14 +231,14 @@ main img {
 
 #timeline-show {
     width: 100%;
-    height: 320px;
+    height: 340px;
     /* background-color: rgb(148, 148, 148); */
     display: flex;
     flex-direction: row;
     overflow: auto;
 }
 
-.timeline-item {
+.timeline-item  {
     /* background-color: red; */
     text-align: center;
     width: 200px;
@@ -254,6 +254,13 @@ main img {
 
 .timeline-item h3 {
     width: 200px;
+    font-size: 18px;
+}
+
+
+section h3 {
+    font-size: 25px;
+    margin-bottom: 30px;
 }
 
 /* =================================
@@ -290,6 +297,7 @@ aside {
 .tableOfContents ol{
     margin-block: 30px;
     margin-inline: 15%;
+    list-style: upper-roman;
 }
 
 .tableOfContents ol li {
@@ -307,33 +315,55 @@ aside {
 }
 
 .otherArticles {
+
     width: 100%;
     height: 400px;
-    margin: 90px 50px 90px 0;
+    margin: 90px 50px 0 0;
     padding: 20px;
     position: sticky;
-    top: 500px;
+    top: 300px;
 }
 
 .article {
     display: flex;
     flex-direction: row;
     position: sticky;
-    top: 150px;
+    width: 100%;
     align-items: center;
     gap: 20px;
+
 }
+
 .article img {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    margin-inline: 0;
+
     width: 120px;
     min-width: 120px;
     border-radius: 5px;
+
 }
 
 .article a {
     color: black;
+    font-size: 20px;
+}
+
+/* =================================
+           FOOTER
+   =================================
+*/
+
+footer {
+    height: 200px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.803);
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+footer small {
+    margin-bottom: 30px;
 }
 
 /* =================================
@@ -376,6 +406,23 @@ aside {
 @media screen and (min-width: 1600px) {
     .hero-video {
         width: 130%;
+    }
+}
+
+
+@media screen and (max-width: 1400px) {
+    .article {
+        display: block;
+    }
+    
+    .article img {
+        width: fit-content;
+        margin-bottom: 10px;
+    }
+    
+    .article-link {
+        display: block;
+        margin-left: 10px;
     }
 }
 
