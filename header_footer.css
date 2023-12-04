@@ -5,7 +5,9 @@
     list-style: none;
     text-decoration: none;
 }
+
 /* Header ---- Nav Bar */
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -33,19 +35,22 @@ nav{
     text-decoration: none;
     color: white;
     cursor: pointer;
-      
 }
+
 .menu li a{
     position: relative;
     padding: 18.5px;
     display: block;
     color: white;
-
+}
+.menu .lastMenuItem{
+    padding-right:0;
 }
 
 .menu li a::before{
     content: " ";
-    height: 5px;
+    height: 3px;
+    border-radius: 1.5px;
     width: 0;
     background-color: white;
     bottom: 5px;
@@ -58,9 +63,12 @@ nav{
 .menu li a:hover::before{
     width: calc(100% - 36px);
 }
+.menu .lastMenuItem:hover::before{
+    width: calc(100% - 18px);
+}
 
 
-/* Footer  */
+/* Footer   */
 
 footer{
     background-color: rgba(6, 13, 13, 1);
@@ -69,7 +77,6 @@ footer{
 }
 footer a{
     color: white;
-
 }
 footer i{
     margin-right: 5px;
@@ -105,14 +112,14 @@ footer i{
 .footerLogo{
     display: flex;
     align-items: center;
+    gap: 10px;
 }
-.footerLogo img{
+/* .footerLogo img{
     margin-left: 5.5%;
-}
+} */
 .footerLogo h3{
     font-size: 1.5rem;
 }
-
 .footerFindUs ul li a:hover{
     margin: 10px;
 }
@@ -125,4 +132,7 @@ footer i{
 }
 .footerFindUs ul li a:hover .fa-instagram{
     color: rgb(228, 64, 95);
+}
+footer .rights{
+    text-align: center;
 }
