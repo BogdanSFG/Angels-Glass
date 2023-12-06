@@ -312,7 +312,8 @@ aside {
 .tableOfContents {
     margin-inline: auto;
     max-width: 280px;
-    padding-block: 40px;
+    padding-top: 40px;
+    padding-bottom: 20px;
     border-radius: 15px;
     border: 2px solid #6b6b6b86;
     background-color: #a7a7a71c;
@@ -330,6 +331,8 @@ aside {
     margin-inline: 15%;
     list-style: upper-roman;
 }
+
+
 
 .tableOfContents ol li {
     margin-block: 10px;
