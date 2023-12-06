@@ -83,6 +83,7 @@ footer i{
 }
 .footerContainer{
     display: flex;
+    flex-wrap: wrap;
     align-items: stretch;
     justify-content: space-between;
     padding: 10px 0;
@@ -91,7 +92,6 @@ footer i{
 .footerItem{
     width: 23.5%;
     margin: 10px 0;
-    background-color: black;
 }
 
 .footerItem ul, .footerItem h4{
@@ -108,15 +108,26 @@ footer i{
 .footerItem h4{
     margin-bottom: 20px;
     font-weight: 1000;
+    position: relative;
+    width: fit-content;
+}
+.footerItem h4::before{
+    content: " " ;
+    height: 3px;
+    border-radius: 1.5px;
+    width: 100%;
+    background-color: white;
+    bottom: -7px;
+    left: 0;
+    position: absolute;
+    transition: 0.5s;
+    
 }
 .footerLogo{
     display: flex;
     align-items: center;
     gap: 10px;
 }
-/* .footerLogo img{
-    margin-left: 5.5%;
-} */
 .footerLogo h3{
     font-size: 1.5rem;
 }
@@ -124,7 +135,7 @@ footer i{
     margin: 10px;
 }
 .footerFindUs ul li a:hover .fa-youtube{
-    color: rgb(255 0 0)
+    color: rgb(255 0 0);
 }
 .footerFindUs ul li a:hover .fa-facebook{
     
@@ -135,4 +146,13 @@ footer i{
 }
 footer .rights{
     text-align: center;
+}
+
+@media (max-width: 1024px){
+    .footerItem{
+        width: 49%;
+        margin: 10px 0;
+        object-fit: contain;
+        padding-bottom: 2%;
+    }
 }
