@@ -297,6 +297,33 @@ article p {
 }
 
 
+#future-img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper-gradient {
+    display: block;
+    background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%), 
+    url(../images/construction/future.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.wrapper-gradient h2 {
+    color: white;
+    width: 80%;
+    border: none;
+}
+.wrapper-gradient p {
+    display: inline-block;
+    width: 50%;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 600;
+    hyphens: auto;
+}
+
 /* =================================
             ASIDE - SECTION
    =================================
