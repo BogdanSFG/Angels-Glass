@@ -67,6 +67,20 @@ article p {
     position: relative;
 }
 
+.float-right {
+    float: left;
+    padding: 20px;
+    margin: 0;
+    border-radius: 30px;
+    position: relative;
+}
+
+#right {
+    width: 40%;
+    padding: 0;
+    margin: 0 20px 10px 0;
+}
+
 .content img {
     width: 80%;
 }
@@ -78,22 +92,32 @@ article p {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 450px;
     transition: 0.3s ease;
+    padding: 30px 20px;
+
+    margin-bottom: 40px;
 }
 
 
 .column-2-dark {
     background-color: #000000e2;
     color: white;
-    padding-top: 15px;
-    margin-bottom: 40px;
+}
+
+.column-2-reverse {
+    flex-direction: row-reverse;
+}
+
+.column-2-first {
+    margin-bottom: 0;
 }
 
 .column-2-text p {
-    padding-block: 20px;
+    font-weight: 600;
+    padding: 0;
     text-align:justify;
     hyphens: auto;
+    margin: 0;
 }
 
 .column-2-image img {
@@ -144,6 +168,12 @@ article p {
 .card-description {
     font-weight: 600;
     font-family: 'Nunito', sans-serif;
+}
+
+.card:hover {
+    transform: scale(105%);
+    transition: 0.5s ease-out;
+    cursor: default;
 }
 
 /* utility class for image slide up while hovering on a span */
@@ -240,6 +270,33 @@ article p {
     line-height: 1.2;
 }
 
+
+.content ul {
+    list-style: none;
+    padding-inline: 100px;
+    margin-bottom: 40px;
+}
+
+.content ul li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    margin-block: 15px;
+    position: relative;
+}
+
+.content ul li::before {
+    content:'';
+    position: absolute;
+    top:4px;
+    left: -25px;
+    width: 15px;
+    height: 15px;
+    background: linear-gradient(230deg, #0099ff, #000);
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.615);
+}
+
+
 /* =================================
             ASIDE - SECTION
    =================================
@@ -259,6 +316,19 @@ article p {
 
 @media screen and (max-width:1000px) {
 
+    .column-2 {
+        flex-direction: column;
+    }
+
+
+    .column-2 p {
+        padding-inline: 40px;
+    }
+
+    .column-2-image img {
+        width: 70%;
+    }
+
     .column-2-dark {
         padding-top: 30px;
     }
@@ -271,7 +341,7 @@ article p {
     .column-3 div {
         width: 80%;
         flex-basis: 0;
-        margin-bottom: 40px;
+        margin-bottom: 50px;
     }
 }
 
@@ -285,6 +355,13 @@ article p {
     .card {
         width: 80%;
     }
+}
+
+@media screen and (min-width: 1600px ) {
+    .column-2-image img {
+        width: 70%;
+    }    
+
 }
 
     /* PHONE  */
