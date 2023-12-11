@@ -85,7 +85,6 @@ article p {
     width: 80%;
 }
 
-
 /* Artilce - Column-2 black background */
 
 .column-2 {
@@ -180,33 +179,7 @@ article p {
     cursor: default;
 }
 
-/* utility class for image slide up while hovering on a span */
 
-.hover-img {
-    position: relative;
-    cursor: pointer;
-    color: #3F72AF;
-}
-
-.hover-img::after {
-    content:'';
-    position: absolute;
-    background-image: url("https://i.pinimg.com/originals/3f/45/18/3f4518897634e472208900ef9a7898ec.jpg");
-    background-size: cover;
-    aspect-ratio: 1;
-    width: 200px;
-    height: 200px;
-    bottom: 0;
-    left: -25%;
-    transition: 0.5s ease;
-    opacity: 0;
-    box-shadow: 4px 4px 15px black;
-}
-
-.hover-img:hover::after {
-    opacity: 1;
-    bottom: 150%;
-}
 
 /* Article - 3 column section */
 .column-3 {
