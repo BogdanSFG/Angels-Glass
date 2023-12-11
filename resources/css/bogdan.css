@@ -124,6 +124,10 @@ article p {
     width: 90%;
 }
 
+.hyphens {
+    hyphens: auto;
+}
+
 /* Article - 4 cards section */
 
 .wrapper {
