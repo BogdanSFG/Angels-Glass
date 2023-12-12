@@ -1,0 +1,424 @@
+
+
+
+/* EXTENDS the styles.css stylesheet from resources/css folder */
+
+/* =================================
+            HEADER SECTION
+   =================================
+*/
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    min-height: 720px;
+    overflow: hidden;
+    background:linear-gradient(to right, #000000d4 , #ffffff11);
+}
+
+.hero-img {
+    position: absolute;
+    object-position: center;
+    object-fit: cover;
+    min-height: 720px;
+    height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    z-index: -1200;
+}
+
+/* =================================
+            MAIN - SECTION
+   =================================
+*/
+
+article {
+    padding: 0;
+}
+
+article h2 {
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.800);
+    font-size: 35px;
+    border-bottom: 3px solid #aeaeaeaf;
+    margin-block: 60px;
+    margin-inline: 70px;
+}
+
+article h3 {
+    margin-inline: 50px;
+}
+
+article p {
+    font-size: 20px;
+    text-indent: 40px;
+    text-align: justify;
+    margin-bottom: 40px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    z-index: 200;
+    padding-inline: 50px;
+}
+
+.float-left {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    margin: 0;
+    border-radius: 30px;
+    position: relative;
+}
+
+.float-right {
+    float: left;
+    padding: 20px;
+    margin: 0;
+    border-radius: 30px;
+    position: relative;
+}
+
+#right {
+    width: 40%;
+    padding: 0;
+    margin: 0 20px 10px 0;
+}
+
+.content img,
+.intro img {
+    width: 80%;
+}
+
+/* Artilce - Column-2 black background */
+
+.column-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.3s ease;
+    padding: 30px 20px;
+
+    margin-bottom: 40px;
+}
+
+
+.column-2-dark {
+    background-color: #000000e2;
+    color: white;
+}
+
+.column-2-reverse {
+    flex-direction: row-reverse;
+}
+
+.column-2-first {
+    margin-bottom: 0;
+}
+
+.column-2-text p {
+    font-weight: 600;
+    padding: 0;
+    text-align:justify;
+    hyphens: auto;
+    margin: 0;
+}
+
+.column-2-image img {
+    max-height: 300px;
+    width: auto;
+}
+
+.hyphens {
+    hyphens: auto;
+}
+
+/* Article - 4 cards section */
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 300px;
+    flex-flow: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    width: 20%;
+    background: #fff;
+    margin-bottom: 50px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.card-head {
+    width: 100%;
+    padding: 0;
+}
+
+.card-head img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: top;
+    padding: 0;
+}
+
+.card-body {
+    padding: 0 20px 20px;
+    text-align: center;
+}
+
+.card-description {
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+}
+
+.card:hover {
+    transform: scale(105%);
+    transition: 0.5s ease-out;
+    cursor: default;
+}
+
+
+
+/* Article - 3 column section */
+.column-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-block: 40px;
+}
+
+.column-3 div {
+    display: flex;
+    flex-direction: column;
+
+    width: 30%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.60) 0%, rgba(0,0,0,0.90) 100%), 
+    url(../images/construction/technique.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size:cover;
+    aspect-ratio: 1;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(19, 19, 19, 0.22) 0px 15px 12px;
+    padding: 0;
+    border-radius: 5px;
+}
+
+.column-3 div:hover {
+    transform: scale(105%);
+    transition: 0.5s ease-out;
+    cursor: default;
+}
+
+.column-3 div h3 {
+    display: inline-block;
+    margin-inline: auto;
+    color: white;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+
+.column-3 div h3::after {
+    content: '';
+    position: absolute;
+    width: 110%;
+    height: 3px;
+    background-color: white;
+    bottom: -8px;
+    left: -20%;
+    opacity: 0;
+}
+
+.column-3 div:hover h3::after {
+    opacity: 1;
+    left: -7.5%;
+    transition: 0.5s ease;
+}
+
+.column-3 div p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    hyphens: auto;
+    padding: 20px;
+    font-weight: 600;
+    color: white;
+    line-height: 1.2;
+}
+
+
+.content ul {
+    list-style: none;
+    padding-inline: 100px;
+    margin-bottom: 40px;
+}
+
+.content ul li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    margin-block: 15px;
+    position: relative;
+}
+
+.content ul li::before {
+    content:'';
+    position: absolute;
+    top:4px;
+    left: -25px;
+    width: 15px;
+    height: 15px;
+    background: linear-gradient(230deg, #0099ff, #000);
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.615);
+}
+
+
+#future-img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.subcontent{
+    display: flex;
+    justify-content: space-between;
+}
+.subcontent:nth-of-type(even){
+    flex-direction: row-reverse;
+}
+.subcontent .subcontentText{
+    width: 50%;
+}
+.subcontentImg{
+    width: 50%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subcontentImg img{
+    margin:0;
+    width: 100%;   
+}
+
+.wrapper-gradient {
+    display: block;
+    background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%), 
+    url(../images/construction/future.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.wrapper-gradient h2 {
+    color: white;
+    width: 80%;
+    border: none;
+}
+.wrapper-gradient p {
+    display: inline-block;
+    width: 50%;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 600;
+    hyphens: auto;
+}
+
+/* =================================
+            ASIDE - SECTION
+   =================================
+*/
+
+
+/* =================================
+           FOOTER
+   =================================
+*/
+
+
+/* =================================
+           MEDIA - UTILITY
+   =================================
+*/
+
+@media screen and (max-width:1000px) {
+
+    .column-2 {
+        flex-direction: column;
+    }
+
+
+    .column-2 p {
+        padding-inline: 40px;
+    }
+
+
+    .column-2-dark {
+        padding-top: 30px;
+    }
+
+    .column-3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column-3 div {
+        width: 80%;
+        flex-basis: 0;
+        margin-bottom: 50px;
+    }
+
+    .subcontent{
+        display: flex;
+        flex-direction: column;
+    }
+    .subcontent:nth-of-type(even){
+        flex-direction: column;
+    }
+
+    .subcontent:last-of-type img{
+        margin-bottom: 40px;
+    }
+    .subcontent .subcontentText{
+        width: 100%;
+    }
+    .subcontentImg{
+        width:  100%;
+        display: flex;
+  justify-content: center;
+  align-items: center;
+    }
+    .subcontentImg img{
+        margin:0;
+        width:100%;
+    }
+    
+}
+
+@media screen and (max-width:1400px) {
+    .card {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .card {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1600px ) {
+    
+
+}
+
+    /* PHONE  */
+
+
+
+/* =================================
+           UTILITY
+   =================================
+*/
