@@ -89,14 +89,16 @@ article p {
 
 .column-2 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     transition: 0.3s ease;
     padding: 30px 20px;
-
     margin-bottom: 40px;
 }
 
+.column-2 div {
+    width: 45%;
+}
 
 .column-2-dark {
     background-color: #000000e2;
@@ -117,6 +119,10 @@ article p {
     text-align:justify;
     hyphens: auto;
     margin: 0;
+}
+
+.column-2 div p::after {
+   display: none;
 }
 
 .column-2-image img {
@@ -282,7 +288,7 @@ article p {
 
 .wrapper-gradient {
     display: block;
-    background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%), 
+    background: linear-gradient(to right, rgb(0, 0, 0) 0%,rgb(0, 0, 0) 20%, rgba(255, 255, 255, 0) 100%), 
     url(../images/construction/future.jpg);
     background-size: cover;
     color: white;
@@ -318,12 +324,16 @@ article p {
    =================================
 */
 
+
 @media screen and (max-width:1000px) {
 
     .column-2 {
         flex-direction: column;
     }
 
+    .column-2 div {
+        width: 100%;
+    }
 
     .column-2 p {
         padding-inline: 40px;
@@ -349,6 +359,8 @@ article p {
     }
 }
 
+
+
 @media screen and (max-width:1400px) {
     .card {
         width: 40%;
@@ -367,12 +379,3 @@ article p {
     }    
 
 }
-
-    /* PHONE  */
-
-
-
-/* =================================
-           UTILITY
-   =================================
-*/
