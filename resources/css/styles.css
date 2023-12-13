@@ -490,22 +490,6 @@ aside {
 
 @media (max-width:450px) {
     
-    /* nav */
-    nav img {
-        width: 80px;
-        margin-left: 20px;
-        margin-top: 7px;
-    }
-
-    nav #hamburger {
-        margin-right: 15px;
-        font-size: 35px;
-    }
-
-    .dropdown:hover .dropdown-content{
-        right: 0px;
-        top:49px;
-    }
     
     /* hero */
     .hero {
@@ -589,22 +573,6 @@ aside {
 
 @media (max-width:380px) {
     
-    /* nav */
-    nav img {
-        width: 80px;
-        margin-left: 20px;
-        margin-top: 7px;
-    }
-
-    nav #hamburger {
-        margin-right: 15px;
-        font-size: 35px;
-    }
-
-    .dropdown:hover .dropdown-content{
-        right: 0px;
-        top:49px;
-    }
     
     /* hero */
     .hero {

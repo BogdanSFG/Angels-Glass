@@ -16,7 +16,7 @@
     background:linear-gradient(to right, #000000d4 , #ffffff11);
 }
 
-.hero-img {
+.heroImg {
     position: absolute;
     object-position: center;
     object-fit: cover;
