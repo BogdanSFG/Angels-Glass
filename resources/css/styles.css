@@ -126,6 +126,7 @@ nav #hamburger:hover {
     position: absolute;
     object-fit: cover;
     height: 110vh;
+    min-height: 720px;
     width: 100%;
     max-width: 100%;
     z-index: -100;
@@ -219,7 +220,7 @@ main img {
 }
 
 
-.generalC img {
+.float-right {
     float: right;
     width: 300px;
     margin: 0 0 10px 10px;  
@@ -352,6 +353,17 @@ main img {
     bottom: -40px;
 }
 
+.float {
+    float: right;
+    max-width: 300px;
+    margin: 0 0 10px 20px;
+    transform: rotateY(180deg);
+}
+
+.final-para {
+    margin-bottom: 50px;
+}
+
 /* COLUMN 3 */
 
 .column-3-split {
@@ -369,6 +381,62 @@ main img {
 .column-3-split div img {
     align-self: flex-end;
 }
+
+/* Article - 4 cards section */
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 300px;
+    flex-flow: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    width: 20%;
+    background: #fff;
+    margin-bottom: 50px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.card-head {
+    width: 100%;
+    padding: 0;
+}
+
+.card-head img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: top;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.card-body {
+    padding: 0 20px 20px;
+    text-align: center;
+}
+
+.card-description {
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+}
+
+.card:hover {
+    transform: scale(105%);
+    transition: 0.5s ease-out;
+    cursor: default;
+}
+
+
 
 
 /* LISTS */
