@@ -42,11 +42,6 @@ nav {
     justify-content: space-between;
 }
 
-nav img {
-    width: 100px;
-    margin-left: 20px;
-    margin-top: 7px;
-}
 
 nav img:hover {
     transform: rotateY(360deg);
