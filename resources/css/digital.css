@@ -137,7 +137,7 @@ nav #hamburger:hover {
     align-items:flex-start;
     justify-content: center;
     width: 100%;
-    height: 88vh;
+    height: 110vh;
 }
 
 .hero-title h1 {
@@ -312,15 +312,13 @@ aside {
 }
 
 
-
-
 .otherArticles {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     min-width: 100%;
-    margin-top: 0px;
+    margin-top: 30px;
     max-height: 45vh;
 }
 
@@ -356,6 +354,28 @@ aside {
            MEDIA - UTILITY
    =================================
 */
+
+@media screen and (max-width:1180px) {
+    .otherArticles {
+        align-items: baseline;
+        width: 100%;
+    }
+    
+    aside .otherArticles {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        position: relative;
+        height: fit-content;
+        width: 100%;
+    }
+
+    .otherArticles h2 {
+        position: absolute;
+        left: 30px; 
+    }
+}
+
 @media screen and (max-width:1100px) {
     .hero-title h1 {
         font-size: 80px;
@@ -389,6 +409,13 @@ aside {
     }
 }
 
+@media screen and (max-height:450px) {
+    .otherArticles .article {
+        width: 30%;
+        margin-inline: calc((100%-90%)/6*2);
+    }
+}
+
 @media screen and (min-width: 1600px) {
     .hero-video {
         width: 130%;
@@ -400,42 +427,20 @@ aside {
     .otherArticles {
         display: flex;
         flex-direction: column;
+        justify-content: flex-start;
         height: auto;
         padding: 0;
+        height: 40vh;
     }
     .article {
-        display: block;
-        height: 250px;
-    }
-    
-    .article img {
-        width: fit-content;
-    }
-    
-    .article-link {
-        display: inline-block;
-        width: auto;
-        position: relative;
-        top: -40px;
-    }
-}
-
-
-
-@media screen and (max-width: 1400px) {
-    .otherArticles {
         display: flex;
-        flex-direction: column;
-        height: auto;
-        padding: 0;
-    }
-    .article {
-        display: block;
         height: 250px;
+        margin: 0;
+        padding: 0;
     }
     
     .article img {
-        width: fit-content;
+        width: 200px;
     }
     
     .article-link {
@@ -445,6 +450,9 @@ aside {
         top: -40px;
     }
 }
+
+
+
 
 /* =================================
            UTILITY
