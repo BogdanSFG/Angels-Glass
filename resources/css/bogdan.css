@@ -140,6 +140,7 @@ article p {
     flex-direction: row;
     justify-content: space-evenly;
     padding-block: 40px;
+    z-index: 0;
 }
 
 .column-3 div {
@@ -193,12 +194,14 @@ article p {
 .column-3 div p {
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
+    z-index: 0;
     hyphens: auto;
     padding: 20px;
     font-weight: 600;
     color: white;
     line-height: 1.2;
 }
+
 #future-img {
     width: 100%;
     margin: 0;

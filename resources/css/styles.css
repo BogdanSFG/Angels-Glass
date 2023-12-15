@@ -31,82 +31,7 @@ html {
     background: rgb(120, 120, 120); 
 }
 
-/* =================================
-            NAV SECTION
-   =================================
-*/
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-nav img {
-    width: 100px;
-    margin-left: 20px;
-    margin-top: 7px;
-}
-
-nav img:hover {
-    transform: rotateY(360deg);
-    transition: 1s ease;
-    background-color: dodgerblue;
-    border-radius: 50%;
-}
-
-nav #hamburger {
-    text-decoration: none;
-    color: white;
-    background-color:transparent;
-    border-radius: 15px;
-    font-weight: 600;
-    margin-right: 30px;
-    font-size: 40px;
-    padding: 8px 15px;
-}
-
-nav #hamburger:hover {
-    background-color: rgba(86, 86, 86, 0.4);
-    transition: 0.2s ease;
-}
-/* =================================
-      NAV SECTION => Dropdown Menu
-   =================================
-*/
-
-.dropdown {
-    position: relative;
-}
-
-.dropdown-content {
-    display: none;
-    border-radius: 5px;
-    width: 180px;
-    text-align: left;
-}
-
-.dropdown-content a {
-    display: block;
-    font-size: 20px;
-    padding:15px;
-    text-decoration: none;
-    color: white;
-}
-
-.dropdown-content a:hover {
-    background-color: rgba(86, 86, 86, 0.679);
-}
-
-.dropdown:hover .dropdown-content{
-    display: block;
-    position: absolute;
-    backdrop-filter: blur(8px);
-    background-color: rgba(86, 86, 86, 0.4);
-    border-radius: 5px;
-    right: 30px;
-    top:55px;
-}
 
 
 /* =================================
@@ -485,9 +410,7 @@ aside {
     align-items: center;    
     justify-content: space-around;
     position: sticky;
-    top:0;
-
-    height: 100vh;
+    top:70px;
 }
 
 .tableOfContents {
@@ -536,7 +459,7 @@ aside {
     align-items: flex-start;
     justify-content: center;
     min-width: 100%;
-    margin-top: 0px;
+    margin-top: 30px;
     max-height: 45vh;
 }
 
@@ -566,24 +489,10 @@ aside {
     line-height: 1.5;
 }
 
-/* =================================
-           FOOTER
-   =================================
-*/
-
-footer {
-    height: 200px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.803);
-    color: white;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+#third {
+    display: none;
 }
 
-footer small {
-    margin-bottom: 30px;
-}
 
 /* =================================
            MEDIA - UTILITY
@@ -724,6 +633,10 @@ footer small {
     .article img {
         margin-bottom: 10px;
         max-width: 200px;
+    }
+
+    #third {
+        display: flex;
     }
 
 }
@@ -931,6 +844,10 @@ footer small {
 
     .column-2-image #image-scale {
         width: 70%;
+    }
+    
+    #third {
+        display: flex;
     }
 }
 
