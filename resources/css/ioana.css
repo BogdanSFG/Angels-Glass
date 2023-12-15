@@ -350,24 +350,7 @@ aside {
     line-height: 1.5;
 }
 
-/* =================================
-           FOOTER
-   =================================
-*/
 
-footer {
-    height: 200px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.803);
-    color: white;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
-
-footer small {
-    margin-bottom: 30px;
-}
 
 /* =================================
            MEDIA - UTILITY
