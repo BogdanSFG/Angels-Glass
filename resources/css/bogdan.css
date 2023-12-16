@@ -32,6 +32,7 @@
 
 article {
     padding: 0;
+    overflow-x: hidden;
 }
 
 article h2 {
@@ -273,6 +274,8 @@ article p {
         margin-bottom: 50px;
     }
 }
+
+
 
 
 @media screen and (min-width: 1600px ) {

@@ -50,7 +50,7 @@
 /* SECTIONS  */
 
 section {
-    height: 100vh;
+    height: calc(100vh - 83px);
     width: 100vh;
     min-height: 700px;
     overflow: hidden;
@@ -129,6 +129,7 @@ section p {
 }
 
 .content h2 {
+    margin-top: 2rem;
     margin-bottom: 1.5rem;
     font-family: 'Poppins', serif;
     font-size: 2.5rem;
@@ -187,6 +188,9 @@ section p {
     transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
+#padding-top-0 {
+    margin-top: 0;
+}
 
 /* Special cases for ajusting images */
 
@@ -213,7 +217,25 @@ section p {
     right: -5%;
 }
 
+
+
+@media (max-width: 700px) {
+    .hero-title h1 {
+    font-size: 60px;
+}
+.hero-title h1, .hero-title h3 {
+    margin-inline: 70px;
+}
+
+.hero-title h1 {
+    margin-top: 30px;
+}
+}
+
+
 @media (min-width:700px) {
+
+
 
     .content p {
         font-size: 1rem;
