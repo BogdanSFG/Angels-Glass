@@ -1,0 +1,108 @@
+/* utility class for image slide up while hovering on a span */
+
+.hover-img {
+    position: relative;
+    cursor: pointer;
+    color: #3F72AF;
+}
+
+.hover-img::after {
+    content:'';
+    position: absolute;
+    background-size: cover;
+    aspect-ratio: 1;
+    width: 200px;
+    height: 200px;
+    bottom: 0;
+    left: -40%;
+    transition: 0.6s ease;
+    opacity: 0;
+    box-shadow: 4px 4px 15px black;
+    z-index: -1;
+}
+
+.hover-img:hover::after {
+    opacity: 1;
+    bottom: 150%;
+    z-index: 0;
+}
+
+/* individual cases for construction.html */
+
+.terra::after {
+    background-image: url("https://www.irresistible-riviera.fr/images/faire/terra-amata/terra-amata-12.jpg");
+}
+
+.stonehenge::after {
+    background-image: url("https://news.artnet.com/app/news-upload/2015/07/stonehenge-03-256x256.jpg");
+    aspect-ratio: 1;
+}
+
+.stave-churches::after {
+    background-image: url("https://assets.simpleviewcms.com/simpleview/image/upload/c_fill,g_xy_center,h_640,w_640,x_5276,y_2406/f_jpg/q_65/v1/clients/norway/heddal_stavechurch_telemark_eastern_norway_photo_visit_telemark_268b754c-adb0-4231-8a25-2c1fdf9e554e.jpg?_a=BATCtdAA0");
+    left: -30%;
+}
+
+.palatine::after {
+    background-image: url("https://i.pinimg.com/originals/3f/45/18/3f4518897634e472208900ef9a7898ec.jpg");
+    left: -20%;
+}
+
+.eddystone::after {
+    background-image: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/d3/ec/5b/caption.jpg?w=1200&h=-1&s=1");
+    left: 0;
+}
+
+.iron-bridge::after {
+    background-image: url("https://www.historic-uk.com/assets/Images/destinationsukironbridge1.jpg?1390899907");
+    left: -20%;
+}
+
+.crystal-palace::after {
+    background-image: url("https://cdn.thecollector.com/wp-content/uploads/2023/05/crystal-palace-building-hyde-park.jpg?width=1400&quality=70");
+    background-position: right;
+    left:-23%;
+}
+
+.empire-state::after {
+    background-image: url("https://s39023.pcdn.co/wp-content/uploads/2022/10/Where-Are-Those-Morgans-Empire-State-Building-728x546.jpg.optimal.jpg");
+    left: -2%;
+}
+
+.flat-iron::after {
+    background-image: url("https://s3.amazonaws.com/images.skyscrapercenter.com/thumbs/1249_500x650.jpg");
+    left: -18%;
+}
+
+.woolworth-building::after {
+    background-image: url("https://nylandmarks.org/wp-content/uploads/2015/02/woolworth.jpg");
+    left: -7%;
+}
+
+.petronas::after {
+    background-image: url("https://i0.wp.com/thetowerinfo.com/wp-content/uploads/2018/04/petronas-towers-night-aerial-view.jpg?resize=555%2C655&ssl=1");
+    left: 0.5%;
+}
+
+.burj::after {
+    background-image: url("https://res.klook.com/image/upload/u_activities:wnkhtwo4n0dhe6zmrbcs,h_1.0,ar_3:2,c_scale,e_blur:10000/c_fill,w_750,h_500/q_80/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/wnkhtwo4n0dhe6zmrbcs.jpg");
+    left:-45%;
+}
+
+.panama::after {
+    background-image: url("https://blogs.worldbank.org/sites/default/files/voices/panama-canal-aerial-2-from-vanessa.jpg");
+    background-position: right;
+    left:-40%;
+}
+
+.channel::after {
+    background-image: url("https://i0.wp.com/theconstructor.org/wp-content/uploads/2020/10/Tunnels-between-continents-FBthumbs.jpg?fit=1080%2C1080&ssl=1");
+    background-position: right;
+    left:-40%;
+}
+
+.gorges-dam::after {
+    background-image: url("https://p.potaufeu.asahi.com/02d2-p/picture/22800383/515ea04e6e692c8f0ca7e3601ed32175.jpg");
+    background-position: left;
+    left: -20%;
+}
