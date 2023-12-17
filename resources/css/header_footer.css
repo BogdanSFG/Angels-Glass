@@ -1,8 +1,4 @@
 *{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    list-style: none;
     text-decoration: none;
 }
 
@@ -11,9 +7,10 @@
 nav{
     padding: 0 5%;
     color: white;
-    background-color: #060d0d;
+    background: linear-gradient(to top , #000, #404040);
+    box-shadow: 4px 0 20px black;
     position: fixed;
-    z-index: 1;
+    z-index: 100;
     top: 0;
     width: 100%;
 }
@@ -23,6 +20,7 @@ nav{
     float: left;
 }
 .menu{
+    list-style: none;
     font-size: 20px;
     text-transform: uppercase;
     text-decoration: none;
@@ -96,7 +94,7 @@ nav .menu-btn:checked ~ .menu-icon .nav-icon:after{
     top:0;
 }
 
-@media (min-width: 800px){
+@media screen and (min-width: 800px){
     .menu li{
         float:left;
     }
@@ -136,7 +134,7 @@ nav .menu-btn:checked ~ .menu-icon .nav-icon:after{
 /* Footer   */
 
 footer{
-    background-color: #060d0d;
+    background: linear-gradient(to top , #000, #404040);
     color: white;
     padding-inline: 5%;
     font-size: 0.8rem;
@@ -163,6 +161,7 @@ footer i{
 .footerItem ul, .footerItem h4{
     margin-left: 5.5%;
     font-size: 1.33rem;
+    list-style: none;
 }
 .footerItem ul li{
     margin-bottom: 5px;
@@ -214,11 +213,14 @@ footer .rights{
     text-align: center;
 }
 
-@media (max-width: 1024px){
+@media screen and (max-width: 1024px){
     .footerItem{
         width: 49%;
-        margin: 10px 0;
-        object-fit: contain;
         padding-bottom: 2%;
+    }
+}
+@media screen and (max-width: 480px){
+    .footerItem{
+        width: 100%;
     }
 }
