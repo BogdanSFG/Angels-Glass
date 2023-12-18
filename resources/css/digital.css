@@ -1,0 +1,62 @@
+.digital-video{
+    margin: 0;
+    width: 400px;
+    height: 200px;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+
+.generalC {
+    color: black;
+    background-color: rgba(107, 107, 107, 0.151);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.generalC img {
+    float: right;
+    width: 300px;
+    margin: 0 0 10px 10px;  
+}
+
+article {
+    max-width: 70%;
+    padding: 50px;
+    margin-left: 50px;
+    border-right: 1px solid rgba(0, 0, 0, 0.322);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.322);
+}
+
+article h2 {
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.800);
+    font-size: 35px;
+    border-bottom: 3px solid #aeaeaeaf;
+    margin-block: 40px;
+    margin-inline: 70px;
+}
+
+article p {
+    font-size: 20px;
+    text-indent: 40px;
+    text-align: justify;
+    margin-bottom: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+}
+
+.hero-title {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 110vh;
+}
