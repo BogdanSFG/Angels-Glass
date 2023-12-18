@@ -281,11 +281,10 @@ aside {
 .aside-area {
     top: 90px;
     position: sticky;
-    top:30px;
 }
 
 .tableOfContents {
-    padding: 70px;
+    padding: 70px 30px;
     margin-inline: auto;
     max-width: 280px;
     padding-top: 40px;
