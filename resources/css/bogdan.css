@@ -95,6 +95,7 @@ article p {
     transition: 0.3s ease;
     padding: 30px 20px;
     margin-bottom: 40px;
+    z-index: 0;
 }
 
 .column-2 div {
